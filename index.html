@@ -101,7 +101,7 @@ p{font-size:1.1rem;line-height:1.75}
       <p>Sen benim için hâlâ çok değerlisin. Aramızda yaşananlar bende hafife alınacak şeyler olarak durmuyor; hepsi benim için bir anlam taşıyor. Seni özlüyorum. Bunu bir şeyi değiştirmek için söylemiyorum, sadece saklamak istemediğim için söylüyorum.</p>
       <p>Her şeyin eskisi gibi olmak zorunda olmadığını biliyorum. Hislerine ve ihtiyaç duyduğun alana saygı duyuyorum. Bu mesajı karşılık beklemek için hazırlamadım; cevap vermek zorunda da değilsin.</p>
       <p>Eğer bir gün ikimiz de istersek, birbirimizi yeniden anlamaya çalışmaya açığım. Acele etmeden, kimseyi zorlamadan. O gün gelmese bile, seni tanımış olmak bende iyi bir yerde duruyor.</p>
-      <p class="sign">Kendine iyi bak, Elif.</p>
+      <p class="sign">11.11 olan kutsal saatimize denk getiremedim </p>
     </article>
     <button class="btn next" data-go="4">Devam et</button>
   </section>
@@ -174,8 +174,8 @@ p{font-size:1.1rem;line-height:1.75}
 
   /* ---- Ekran 4: küçük şaka (sayfadan çıkışı engellemez) ---- */
   var run=document.getElementById('runaway'),quip=document.getElementById('quip'),tries=0;
-  var quips=['Hey, nereye?','Bu kadar kolay değil :)','Yakalayamadın.','Tamam, tamam…'];
-  function resetJoke(){tries=0;run.textContent='Ben gidiyorum o zaman.';run.style.left='50%';run.style.top='50%';quip.textContent=''}
+  var quips=['Ayib ediyon','yaw nere gidiyon','yogk yaw','zooort'];
+  function resetJoke(){tries=0;run.textContent='Servet malsin .';run.style.left='50%';run.style.top='50%';quip.textContent=''}
   function dodge(e){
     if(tries>=quips.length)return;
     e.preventDefault();
@@ -183,7 +183,7 @@ p{font-size:1.1rem;line-height:1.75}
     var x=w/2+Math.random()*(box.width-w),y=h/2+Math.random()*(box.height-h);
     run.style.left=x+'px';run.style.top=y+'px';
     quip.textContent=quips[tries];tries++;
-    if(tries>=quips.length){setTimeout(function(){run.textContent='Kalıyorum.';run.style.left='50%';run.style.top='50%'},reduce?0:700)}
+    if(tries>=quips.length){setTimeout(function(){run.textContent='Serveti cok sevdigim icin kaliyorum ';run.style.left='50%';run.style.top='50%'},reduce?0:700)}
   }
   run.addEventListener('pointerdown',dodge);
   run.addEventListener('click',function(e){
